@@ -15,6 +15,7 @@ class HelloWorld(AbstractLambda):
         Explain incoming event here
         """
         # todo implement business logic
+        """
         path = event.get('rawPath')
         method = event.get('requestContext', {}).get('http', {}).get('method')
 
@@ -46,6 +47,7 @@ class HelloWorld(AbstractLambda):
                 'headers': headers,
                 'body': json.dumps(response_body)
             }
+            """
         return 200
     
 
