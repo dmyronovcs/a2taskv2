@@ -42,7 +42,7 @@ class HelloWorld(AbstractLambda):
                 }
                 return response
             else:
-                error_message = f'Bad request syntax or unsupported method. Requested path: {path}. HTTP method: {method}'
+                error_message = f'Bad request syntax or unsupported method. Request path: {path}. HTTP method: {method}'
                 _LOG.error(error_message)
                 response_body = {
                     'statusCode': 400,
